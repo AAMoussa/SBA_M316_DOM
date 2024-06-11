@@ -1,5 +1,6 @@
 
-const form = document.getElementById("inputForm");
+const form = document.querySelector("form");
+
 // Create the form Items
 const name = form.elements["name"];
 const email = form.elements["email"];
@@ -13,10 +14,14 @@ const userData = [];
 const outputdiv = document.getElementById("outputContainer");
 const ulcreated = document.createElement("ul");
 ulcreated.setAttribute("id", "outputli");
+// Adding a class name to the newly created unordered list element
+ulcreated.classList.add("changecolor");
 outputdiv.appendChild(ulcreated);
 
 //upon submission, incorporate the validate event handler that follows:
 form.addEventListener("submit", validate);
+
+
 
 // The big validation function.
 function validate(evt) {
