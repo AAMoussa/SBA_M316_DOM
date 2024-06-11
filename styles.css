@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    
+    
+    
+    padding: 2px;
+    border: 2px solid black;
+    background-color:whitesmoke;
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 0;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(178, 187, 161);
+    font-weight: bold;
+    margin: 0, 2px, 2px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+main {
+    
+    font-style: italic;
+    background-color: yellowgreen;
+    font-weight: bold;
+    margin: 0, 2px, 0, 2px;
+    padding-top: 0;
+    padding-bottom: 1%;
+    
+}
+
+#inputContainer{
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(161, 50, 205);
+    font-weight: bold;
+    margin: 2px, 2px, 2px, 2px;
+    padding-top: 5%;
+    padding-bottom: 1%;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0 ;
+  }
+
+input,select {
+    width: 200px;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+#outputContainer{
+    font-style: italic;
+    background-color: rgb(102, 80, 198);
+    font-weight: bold;
+    margin: 2px, 0, 2px,;
+    padding-top: 2px;
+    padding-bottom: 2%;
+
+}

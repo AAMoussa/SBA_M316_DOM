@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating User_Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Creating a User_Profile</h1>
+        <p>Enter your Information to create a profile.</p>
+        <div id="inputContainer">
+            <form
+            action="javascript: alert('Success!');"
+            name="myForm"
+            method="POST"
+            id="inputForm"
+            >
+            <fieldset>
+                <legend> REQUIRED INFORMATION</legend>
+                <input type="text" name="name" placeholder="Name" /><br>
+                <input type="text" name="email" placeholder="Email" /><br>
+                <input type="text" name="zip" placeholder="Zip Code" /><br>
+                <select name="country">
+                    <option value="">Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="UAE">UAE</option>
+                </select><br>
+                <input type="password" name="password" placeholder="Password" /> <br>
+                <input type="submit" value="Submit" style="background-color: rgb(110, 142, 228);"/>
+            </fieldset>
+            </form>
+
+        </div>
+
+        <div id="outputContainer">
+            <p>Submitting the correct formatted Info <br> will list the profile content below.</p>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
