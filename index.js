@@ -64,16 +64,16 @@ function validate(evt) {
     }else{
         userData.push("Password: ...that's a secret.");
     }
-
-    alert(`Name: ${nameVal}
+                                  // Utilizing the BOM alert method
+    alert(`Name: ${nameVal}           
         Email: ${emailVal}
         Country: ${countryVal}
         Zip Code: ${zipVal}
         Password: ...that's a secret.`);
     
-        const liparent = document.getElementById("outputli");
-        for (let i = 0; i < userData.length; i++) {
-            let item = userData[i];
+        const liparent = document.getElementById("outputli");         // selecting the output's display area
+        for (let i = 0; i < userData.length; i++) {                   // iterating over the array of output values
+            let item = userData[i];                                   // and assighn its value to the newly created and appended li for display.
             liparent.appendChild(document.createElement("li")). textContent = item;
         };    
     return true;
